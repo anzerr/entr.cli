@@ -1,3 +1,33 @@
 
 ### `Intro`
+Run a command when a file/directory is changed
 
+#### `Install`
+``` bash
+npm install --save git+ssh://git@github.com/anzerr/entr.cli.git
+```
+
+``` bash
+git clone git+ssh://git@github.com/anzerr/entr.cli.git &&
+cd entr.cli &&
+npm link
+```
+
+### `Example`
+
+``` bash
+entr -r index.js ls -la .
+entr -p package.json npm i
+```
+
+``` javascript
+const Entr = require('entr.cli');
+
+new Entr({
+	cwd: path.resolve('./index.js'), // file/dir to watch
+	exec: ['cat', 'index.js'], // command to run
+	reload: false, // should it track and kill last process
+	postpone: false, // should it run on start
+	exclude: null // regex to exclude files to watch
+});
+```
