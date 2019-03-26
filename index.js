@@ -6,8 +6,16 @@ class Entr {
 
 	constructor(options) {
 		this._options = options;
-		let reg = (this._options.exclude) ? new RegExp(this._options.exclude) : null;
-		this._watch = new Watcher(this._options.cwd, reg ? (p) => p.match(reg) : null).on('change', (r) => {
+		let include = (this._options.include) ? new RegExp(this._options.include) : null;
+		let exclude = (this._options.exclude) ? new RegExp(this._options.exclude) : null;
+		this._watch = new Watcher(this._options.cwd, (include || exclude) ? (p) => {
+			if (include) {
+				if (p.match(include)) {
+					return true;
+				}
+			}
+			return p.match(exclude);
+		} : null).on('change', (r) => {
 			if (r[0] === 'change' && !r[1]) {
 				this.run();
 			}
