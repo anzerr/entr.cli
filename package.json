@@ -11,7 +11,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"eslint": "5.11.1",
-		"eslint-config-basic": "git+http://git@github.com/anzerr/eslintrc.git"
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
 	"eslintConfig": {
 		"extends": "eslint-config-basic"
@@ -32,7 +32,7 @@
 	},
 	"homepage": "https://github.com/anzerr/entr.cli#readme",
 	"dependencies": {
-		"cli.util": "git+http://git@github.com/anzerr/cli.util.git",
-		"fs.watcher": "git+http://git@github.com/anzerr/fs.watcher.git"
+		"cli.util": "git+https://git@github.com/anzerr/cli.util.git",
+		"fs.watcher": "git+https://git@github.com/anzerr/fs.watcher.git"
 	}
 }
