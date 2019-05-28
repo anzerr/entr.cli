@@ -8,7 +8,7 @@ npm install --save git+https://git@github.com/anzerr/entr.cli.git
 ```
 
 ``` bash
-git clone https://git@github.com/anzerr/entr.cli.git &&
+git clone git+https://git@github.com/anzerr/entr.cli.git &&
 cd entr.cli &&
 npm link
 ```
