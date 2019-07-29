@@ -18,7 +18,8 @@
 		"entr": "./bin/index.js"
 	},
 	"scripts": {
-		"test": "node bin/index.js -i \"^.*\\.js$\" . ls -la ."
+		"test": "node test.js",
+		"example": "node bin/index.js -i \"^.*\\.js$\" . ls -la ."
 	},
 	"eslintConfig": {
 		"extends": "eslint-config-basic"
