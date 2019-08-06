@@ -29,7 +29,6 @@
 		"fs.watcher": "git+https://git@github.com/anzerr/fs.watcher.git"
 	},
 	"devDependencies": {
-		"eslint": "5.11.1",
 		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
 	"engines": {

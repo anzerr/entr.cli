@@ -4,11 +4,11 @@ Run a command when a file/directory is changed
 
 #### `Install`
 ``` bash
-npm install --save git+https://git@github.com/anzerr/entr.cli.git
+npm install --save git+https://github.com/anzerr/entr.cli.git
 ```
 
 ``` bash
-git clone git+https://git@github.com/anzerr/entr.cli.git &&
+git clone git+https://github.com/anzerr/entr.cli.git &&
 cd entr.cli &&
 npm link
 ```
