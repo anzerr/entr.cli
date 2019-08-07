@@ -9,7 +9,7 @@ npm install --save @anzerr/entr.cli
 ```
 
 ``` bash
-git clone git+https://git@github.com/anzerr/entr.cli.git &&
+git clone git+https://github.com/anzerr/entr.cli.git &&
 cd entr.cli &&
 npm link
 ```

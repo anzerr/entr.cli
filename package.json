@@ -1,6 +1,6 @@
 {
 	"name": "entr.cli",
-	"version": "1.0.3",
+	"version": "1.0.5",
 	"keywords": [],
 	"homepage": "https://github.com/anzerr/entr.cli#readme",
 	"bugs": {
@@ -29,7 +29,6 @@
 		"fs.watcher": "git+https://git@github.com/anzerr/fs.watcher.git"
 	},
 	"devDependencies": {
-		"eslint": "5.11.1",
 		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
 	"engines": {
