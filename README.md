@@ -4,7 +4,8 @@ Run a command when a file/directory is changed
 
 #### `Install`
 ``` bash
-npm install --save git+https://git@github.com/anzerr/entr.cli.git
+npm install --save git+https://github.com/anzerr/entr.cli.git
+npm install --save @anzerr/entr.cli
 ```
 
 ``` bash
