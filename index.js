@@ -6,15 +6,10 @@ class Entr {
 
 	constructor(options) {
 		this._options = options;
-		let include = (this._options.include) ? new RegExp(this._options.include) : null;
-		let exclude = (this._options.exclude) ? new RegExp(this._options.exclude) : null;
-		this._watch = new Watcher(this._options.cwd, (include || exclude) ? (p) => {
-			if (include) {
-				if (p.match(include)) {
-					return true;
-				}
-			}
-			return p.match(exclude);
+		this._include = (this._options.include) ? new RegExp(this._options.include) : null;
+		this._exclude = (this._options.exclude) ? new RegExp(this._options.exclude) : null;
+		this._watch = new Watcher(this._options.cwd, (this._include || this._exclude) ? (p) => {
+			return this.exclude(p);
 		} : null).on('change', (r) => {
 			if (r[0] === 'change' && !r[1]) {
 				this.run();
@@ -23,6 +18,15 @@ class Entr {
 		if (!this._options.postpone) {
 			this.run();
 		}
+	}
+
+	exclude(p) {
+		if (this._include) {
+			if (p.match(this._include)) {
+				return true;
+			}
+		}
+		return this._exclude ? !p.match(this._exclude) : true;
 	}
 
 	run() {

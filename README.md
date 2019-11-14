@@ -20,6 +20,7 @@ npm link
 entr -r index.js ls -la .
 entr -p package.json npm i
 entr -p package.json sh -c "rm -f package-lock.json && npm i"
+entr -e "(node_module|git)" -i '^(?!.*node_modules).*\.ts$' . echo "change"
 ```
 
 ``` javascript
