@@ -25,5 +25,6 @@ new Entr({
 	reload: cli.has('reload'),
 	postpone: cli.has('postpone'),
 	exclude: cli.get('exclude'),
-	include: cli.get('include')
+	include: cli.get('include'),
+	eval: !cli.has('no-eval')
 });
