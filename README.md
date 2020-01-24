@@ -1,5 +1,7 @@
 
 ### `Intro`
+![GitHub Actions status | publish](https://github.com/anzerr/entr.cli/workflows/publish/badge.svg)
+
 Run a command when a file/directory is changed
 
 #### `Install`
