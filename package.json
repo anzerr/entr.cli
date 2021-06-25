@@ -1,6 +1,6 @@
 {
 	"name": "entr.cli",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"description": "Run a command when a file/directory is changed",
 	"keywords": [
 		"bin",
