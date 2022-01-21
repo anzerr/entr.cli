@@ -27,16 +27,11 @@
 		"test": "node test.js",
 		"example": "node bin/index.js -i \"^.*\\.js$\" . ls -la ."
 	},
-	"eslintConfig": {
-		"extends": "eslint-config-basic"
-	},
 	"dependencies": {
 		"cli.util": "git+https://git@github.com/anzerr/cli.util.git",
 		"fs.watcher": "git+https://git@github.com/anzerr/fs.watcher.git"
 	},
-	"devDependencies": {
-		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
-	},
+	"devDependencies": {},
 	"engines": {
 		"node": ">= 0.10.0"
 	}
